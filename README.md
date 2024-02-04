@@ -79,10 +79,10 @@ Move to src folder
 ```bash
 cd src
 ```
-Run Flask api
+Run inference
 ```bash
 python inference.py --saved_model_path /path/to/saved_model --saved_submission_path /path/to/submission.csv
 ```
 
 ## Author
-This TikTok segmentation project was developed by Namchuk Maksym. If you have any questions, please contact me: namchuk.maksym@gmail.com
+This Airbus Ship Detection project was developed by Namchuk Maksym. If you have any questions, please contact me: namchuk.maksym@gmail.com
