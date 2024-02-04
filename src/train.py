@@ -102,13 +102,13 @@ def main(args: dict) -> None:
 if __name__ == "__main__":
     # Command-line argument parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("--image_height", type=str, help='Specify height')
-    parser.add_argument("--image_width", type=str, help='Specify width')
+    parser.add_argument("--image_height", type=int, help='Specify height')
+    parser.add_argument("--image_width", type=int, help='Specify width')
     parser.add_argument("--images_path", type=str, help='Specify path for train_v2 folder')
     parser.add_argument("--masks_path", type=str, help='Specify path for train_ship_segmentations_v2.csv file')
     parser.add_argument("--epochs", type=int, help='Specify epoch for model training')
     parser.add_argument("--lr", type=float, help='Specify learning rate')
-    parser.add_argument("--batch_size", type=float, help='Specify batch size for training')
+    parser.add_argument("--batch_size", type=int, help='Specify batch size for training')
     parser.add_argument("--saved_model_path", type=str, help='Specify folder path for saved model')
 
     # Parsing command-line arguments
