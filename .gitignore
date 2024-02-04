@@ -1,4 +1,4 @@
 .idea
 src/__pycache__
-./model.keras
+src/model.keras
 src/data

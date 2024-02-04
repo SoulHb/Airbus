@@ -85,9 +85,10 @@ def main(args: dict) -> None:
             Possible keys: 'saved_model_path'.
     """
     # Download model from google drive
+    load_model(url=MODEL_URL, output_path=os.path.join(SAVED_MODEL_PATH, 'model_v1.keras'))
     # Create and load model
     model = unet_model((IMAGE_HEIGHT, IMAGE_WIDTH, 3))
-    model = tf.keras.models.load_model(os.path.join(SAVED_MODEL_PATH, 'model.keras'))
+    model = tf.keras.models.load_model(os.path.join(SAVED_MODEL_PATH, 'model_v1.keras'))
     # Create submission
     submission = make_submission(TEST_IMAGES, model)
     submission.to_csv('submission.csv', index=False)
