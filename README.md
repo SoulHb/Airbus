@@ -37,7 +37,7 @@ conda create --name=airbus python=3.10
 ```
 Activate virtual environment
 ```bash
-conda activate --name=airbus 
+conda activate airbus 
 ```
 Install pip 
 ```bash
